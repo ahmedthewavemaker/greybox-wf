@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greybox Wireframe</title>
+    <link href="greybox.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Soccer Player Quiz</h1>
+        </div>
+        <!--start page only-->
+        <button>Start Quiz</button>
+    </header>
+    <main>
+        <ul class="question-and-score">
+            <li>Question Number:</li>
+            <li>Score:</li>
+        </ul>
+        <!--question page-->
+        <fieldset>
+            <form class="form">
+
+                <div class="question">Question:</div>
+                <div class="answer">
+                    <div><input type="radio" name="answer" value="option 1"><label for="option 1">Option 1</label></div>
+                    <div><input type="radio" name="answer" value="option 2"><label for="option 2">Option 2</label></div>
+                    <div><input type="radio" name="answer" value="option 3"><label for="option 3">Option 3</label></div>
+                    <div><input type="radio" name="answer" value="option 4"><label for="option 4">Option 4</label></div>
+                </div>
+
+            </form>
+        </fieldset>
+        <button>Submit</button>
+
+        <!--feedback page-->
+        <h2>Sorry, that was incorrect.</h2>
+        <p> The correct answer is ....</p>
+        <button id="nextQuestionButton">Next Question</button>
+
+        <!--score page/restart-->
+        <h2>Congratulations, you finished the quiz!</h2>
+        <p>Your score is.......</p>
+        <button id="restartQuizButton">Restart Quiz</button>
+
+
+    </main>
+</body>
+
+</html>
